@@ -1,0 +1,210 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and Background */
+body {
+    background: url('snoopbackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #ffffff;
+    line-height: 1.6;
+    padding: 20px;
+    font-family: 'Roboto Condensed', serif;
+    position: relative;
+    z-index: 0;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px; /* Letter-spacing for body text */
+}
+
+/* Main Container */
+main {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+/* Header */
+h1, h2 {
+    text-align: center;
+    font-family: 'Imperial Script', serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    border-bottom: 2px solid rgb(61, 123, 62);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Spacing for hr */
+hr {
+    border: 0;
+    border-top: 2px solid rgb(61, 123, 62);
+    margin: 20px 0;
+}
+
+/* Sections */
+section {
+    margin-bottom: 30px;
+}
+
+/* Style the entire h3 heading */
+h3 {
+    font-size: 2rem;
+    font-family: 'Roboto Condensed', serif;
+    color: #ffffff;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+/* Style the first letter of the h3 headings */
+h3::first-letter {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(61, 123, 62);
+    margin-right: 5px;
+    vertical-align: baseline;
+}
+
+/* Paragraph and Text */
+p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-family: 'Roboto Condensed', serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+/* Links */
+a {
+    color: rgb(61, 123, 62);
+    text-decoration: none;
+    font-family: 'Roboto Condensed', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+a:link {
+    color: rgb(61, 123, 62); /* Color for unvisited links */
+    text-decoration: none; /* No underline for links */
+}
+
+a:visited {
+    color: rgb(0, 128, 0); /* Slightly darker green for visited links */
+    text-decoration: none; /* Keep no underline for visited links */
+}
+
+a:focus {
+    color: rgb(100, 150, 100); /* Focused links with a lighter green */
+    outline: none; /* Remove default focus outline (you can add your own outline if desired) */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(61, 123, 62); /* Same green for hover */
+}
+
+a:active {
+    color: rgb(34, 90, 60); /* Darker green when active (clicked) */
+    text-decoration: none; /* Remove underline on active */
+}
+
+/* Profile Image */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 4px solid rgb(61, 123, 62);
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    color: #ffffff;
+    font-family: 'Roboto Condensed', serif;
+    position: relative;
+    padding-left: 30px;
+    letter-spacing: 0.5px;
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('za.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Contact Section */
+section.contact {
+    width: 100%;
+    text-align: center;
+}
+
+section.contact a[href="https://www.snoopdogg.com"] {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(61, 123, 62);
+    text-decoration: none;
+}
+
+section.contact p {
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Footer and Contact Links */
+section.professional-summary p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/* Center the Education section */
+section.education {
+    text-align: center;
+}
+
+/* Skills Section */
+ul li {
+    font-weight: normal;
+    color: #ffffff;
+}
+
